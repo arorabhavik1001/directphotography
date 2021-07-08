@@ -1,0 +1,13 @@
+body {
+    /* background-color: black; */
+    overflow-x: hidden;
+    /* background-image: url("../images/splashScreen/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100%;
+}
+
+.centerr {
+    position: absolute;
+  top: 25%;
+}
