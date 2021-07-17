@@ -16,7 +16,9 @@ import Carousel from "react-bootstrap/Carousel";
 
 function Home() {
   return (
+    <>
     <div className="App container">
+      {/* <style>{'body {background-color:#ececec}'}</style> */}
       <img
         src={logo}
         alt="logo"
@@ -33,27 +35,27 @@ function Home() {
         style={{ textAlign: "center", marginBottom: "2rem" }}
       >
         <div className="col-6 col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/home" className="text-gray-500 hover:no-underline">
+          <a href="/home" className="text-gray-500 hover:no-underline hover:text-black">
             HOME
           </a>
         </div>
         <div className="col-6 col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/stories" className="text-gray-500">
+          <a href="/stories" className="text-gray-500 hover:no-underline hover:text-black">
             STORIES
           </a>
         </div>
         <div className="col-6 col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/presets" className="text-gray-500">
+          <a href="/presets" className="text-gray-500 hover:no-underline hover:text-black">
             PRESETS &amp; LUTS
           </a>
         </div>
         <div className="col-6 col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/about" className="text-gray-500">
-            ABOUT
-          </a>
+        <a href="/about" className="text-gray-500 hover:no-underline hover:text-black">
+          ABOUT
+        </a>
         </div>
         <div className="col col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/booknow" className="text-gray-500">
+          <a href="/booknow" className="text-gray-500 hover:no-underline hover:text-black">
             BOOK NOW
           </a>
         </div>
@@ -75,20 +77,20 @@ function Home() {
       </Carousel> */}
 
       <Carousel>
-        <Carousel.Item interval={2500}>
+        <Carousel.Item interval={4000}>
           <img className="d-block w-100" src={s1} alt="First slide" />
           {/* <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption> */}
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
+        <Carousel.Item interval={4000}>
           <img className="d-block w-100" src={s2} alt="Second slide" />
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
+        <Carousel.Item interval={4000}>
           <img className="d-block w-100" src={s3} alt="Third slide" />
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
+        <Carousel.Item interval={4000}>
           <img className="d-block w-100" src={s4} alt="Third slide" />
         </Carousel.Item>
       </Carousel>
@@ -110,6 +112,14 @@ function Home() {
         <div className="col-4"><img src={m3} alt="pic3" className="transition duration-150 transform hover:scale-110" /></div>
       </div>
     </div>
+    <footer>
+        <div class="footer">
+          <div class="container" style={{textAlign: 'center'}}>
+          <p style={{margin:"0px", padding:"10px", fontSize:".9rem" }} className="text-gray-500 font-mono">Copyright Ⓒ 2021 Direct Photography. All Rights Reserved. Created by <a href="https://www.instagram.com/bhavikar.1001/" target="_blank">Bhavik Arora</a></p>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
 
