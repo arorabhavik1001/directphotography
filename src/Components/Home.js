@@ -1,6 +1,21 @@
 import React from "react";
 import "../index.css";
 import "../css/bootstrap.min.css";
+import "../css/bootstrap-grid.css"
+import "../css/bootstrap-grid.min.css"
+import "../css/bootstrap.css"
+import "../css/bootstrap.rtl.css"
+import "../css/bootstrap.rtl.min.css"
+import "../css/bootstrap-utilities.rtl.min.css"
+import "../css/bootstrap-utilities.rtl.css"
+import "../css/bootstrap-grid.rtl.min.css"
+import "../css/bootstrap-grid.rtl.css"
+import "../css/bootstrap-utilities.min.css"
+import "../css/bootstrap-utilities.css"
+import "../css/bootstrap-reboot.rtl.min.css"
+import "../css/bootstrap-reboot.rtl.css"
+import "../css/bootstrap-reboot.min.css"
+import "../css/bootstrap-reboot.css"
 import "../css/Home.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from "react-responsive-carousel";
@@ -12,6 +27,7 @@ import s4 from "../images/slider/new size/s4.png";
 import m1 from "../images/home2/m1.jpg";
 import m2 from "../images/home2/m2.jpg";
 import m3 from "../images/home2/m3.jpg";
+import ea1 from "../images/about/ea1.png";
 import Carousel from "react-bootstrap/Carousel";
 
 function Home() {
@@ -78,20 +94,20 @@ function Home() {
 
       <Carousel>
         <Carousel.Item interval={4000}>
-          <img className="d-block w-100" src={s1} alt="First slide" />
+          <img className="d-block w-100" src={ea1} alt="First slide" />
           {/* <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item interval={4000}>
-          <img className="d-block w-100" src={s2} alt="Second slide" />
+          <img className="d-block w-100" src={ea1} alt="Second slide" />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
-          <img className="d-block w-100" src={s3} alt="Third slide" />
+          <img className="d-block w-100" src={ea1} alt="Third slide" />
         </Carousel.Item>
         <Carousel.Item interval={4000}>
-          <img className="d-block w-100" src={s4} alt="Third slide" />
+          <img className="d-block w-100" src={ea1} alt="Third slide" />
         </Carousel.Item>
       </Carousel>
 
@@ -115,7 +131,7 @@ function Home() {
     <footer>
         <div class="footer">
           <div class="container" style={{textAlign: 'center'}}>
-          <p style={{margin:"0px", padding:"10px", fontSize:".9rem" }} className="text-gray-500 font-mono">Copyright Ⓒ 2021 Direct Photography. All Rights Reserved. Created by <a href="https://www.instagram.com/bhavikar.1001/" target="_blank">Bhavik Arora</a></p>
+          <p style={{margin:"0px", padding:"10px", fontSize:".9rem" }} className="text-gray-500">Copyright Ⓒ 2021 Direct Photography. All Rights Reserved. Created by <a href="https://www.instagram.com/bhavikar.1001/" target="_blank">Bhavik Arora</a></p>
           </div>
         </div>
       </footer>

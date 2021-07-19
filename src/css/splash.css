@@ -17,3 +17,17 @@ body {
   background-color: rgba(229, 231, 235, var(--tw-text-opacity));
   /* background-color: rgb(59, 59, 59); */
 }
+
+.profile {
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-top: 2px solid;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
