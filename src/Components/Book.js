@@ -124,27 +124,27 @@ function Book() {
         className="row"
         style={{ textAlign: "center", marginBottom: "2rem" }}
       >
-        <div className="col-6 col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
           <a href="/home" className="text-gray-500 hover:no-underline">
             HOME
           </a>
         </div>
-        <div className="col-6 col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
           <a href="/stories" className="text-gray-500">
             STORIES
           </a>
         </div>
-        <div className="col-6 col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
           <a href="/presets" className="text-gray-500">
             PRESETS &amp; LUTS
           </a>
         </div>
-        <div className="col-6 col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
           <a href="/about" className="text-gray-500">
             ABOUT
           </a>
         </div>
-        <div className="col col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
           <a href="/booknow" className="text-gray-500">
             BOOK NOW
           </a>

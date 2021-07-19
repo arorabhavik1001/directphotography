@@ -19,7 +19,10 @@ import "./css/bootstrap-reboot.rtl.min.css"
 import "./css/bootstrap-reboot.rtl.css"
 import "./css/bootstrap-reboot.min.css"
 import "./css/bootstrap-reboot.css"
-import Router from './Router'
+import Router from './Router';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 ReactDOM.render(
     <Router />,

@@ -28,7 +28,7 @@ function About() {
           style={{ textAlign: "center", marginBottom: "2rem" }}
         >
           <div
-            className="col-6 col-lg col-mg"
+            className="col-lg col-mg"
             style={{ paddingBottom: ".5rem" }}
           >
             <a
@@ -39,7 +39,7 @@ function About() {
             </a>
           </div>
           <div
-            className="col-6 col-lg col-mg"
+            className="col-lg col-mg"
             style={{ paddingBottom: ".5rem" }}
           >
             <a
@@ -50,7 +50,7 @@ function About() {
             </a>
           </div>
           <div
-            className="col-6 col-lg col-mg"
+            className="col-lg col-mg"
             style={{ paddingBottom: ".5rem" }}
           >
             <a
@@ -61,7 +61,7 @@ function About() {
             </a>
           </div>
           <div
-            className="col-6 col-lg col-mg"
+            className="col-lg col-mg"
             style={{ paddingBottom: ".5rem" }}
           >
             <a
@@ -71,7 +71,7 @@ function About() {
               ABOUT
             </a>
           </div>
-          <div className="col col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+          <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/booknow"
               className="text-gray-500 hover:no-underline hover:text-black"
@@ -120,6 +120,7 @@ function About() {
                   }}
                 />
                 <h5>Vimal Sharma</h5>
+                <p>Founder &amp; Photographer</p>
                 <ReadMoreAndLess
                   // ref={ReadMore}
                   className="read-more-content"
@@ -147,6 +148,7 @@ function About() {
                   }}
                 />
                 <h5>Vimal Sharma</h5>
+                <p>Co-Founder &amp; Videographer</p>
                 <ReadMoreAndLess
                   // ref={ReadMore}
                   className="read-more-content"
@@ -173,12 +175,13 @@ function About() {
                   src={vikase1}
                   className="transition duration-150 transform hover:scale-110 pb-3 "
                   style={{
-                    width: "50%",
+                    width: "70%",
                     marginLeft: "auto",
                     marginRight: "auto",
                   }}
                 />
                 <h5>Vikas Wadhwa</h5>
+                <p>Editor</p>
                 <ReadMoreAndLess
                   // ref={ReadMore}
                   className="read-more-content"
@@ -204,12 +207,13 @@ function About() {
                   src={beenae1}
                   className="transition duration-150 transform hover:scale-110 pb-3"
                   style={{
-                    width: "50%",
+                    width: "70%",
                     marginLeft: "auto",
                     marginRight: "auto",
                   }}
                 />
                 <h5>Beena Nankani</h5>
+                <p>Photographer</p>
                 <ReadMoreAndLess
                   // ref={ReadMore}
                   className="read-more-content"
@@ -222,7 +226,7 @@ function About() {
                   expert in capturing the visual that connects instantly with
                   the viewers. She pays attention to every minute detail and
                   combines unique camera techniques to create stunning shots on
-                  the screen.Her photos are pure work of art.
+                  the screen. Her photos are pure work of art.
                 </ReadMoreAndLess>
               </div>
             </div>
@@ -232,12 +236,13 @@ function About() {
                   src={anniee1}
                   className="transition duration-150 transform hover:scale-110 pb-3"
                   style={{
-                    width: "50%",
+                    width: "70%",
                     marginLeft: "auto",
                     marginRight: "auto",
                   }}
                 />
                 <h5>Annie Nathan</h5>
+                <p>Candid Photographer</p>
                 <ReadMoreAndLess
                   // ref={ReadMore}
                   className="read-more-content"

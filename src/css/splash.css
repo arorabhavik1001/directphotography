@@ -9,7 +9,17 @@ body {
 
 .centerr {
     position: absolute;
-  top: 25%;
+  top: 15%;
+}
+
+@media (min-width: 640px) {
+  .centerr {
+      top: 25%;
+  }
+}
+
+.centerrr {
+  vertical-align: middle
 }
 
 .footer {
