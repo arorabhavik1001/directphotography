@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../index.css";
 import "../css/bootstrap.min.css";
 import "../css/bootstrap-grid.css";
@@ -28,18 +28,20 @@ import s4 from "../images/slider/new size/s4.png";
 import m1 from "../images/home2/m1.jpg";
 import m2 from "../images/home2/m2.jpg";
 import m3 from "../images/home2/m3.jpg";
+import rLogo from "../images/rLogo.png"
 // import Carousel from "react-bootstrap/Carousel";
 
 function Home() {
+  const [name, setName] = useState("");
   return (
     <>
       <div className="App container">
         {/* <style>{'body {background-color:#ececec}'}</style> */}
         <img
-          src={logo}
+          src={rLogo}
           alt="logo"
           style={{
-            height: "7rem",
+            height: "6.3rem",
             marginLeft: "auto",
             marginRight: "auto",
             marginTop: "1.5rem",
@@ -50,42 +52,47 @@ function Home() {
           className="row"
           style={{ textAlign: "center", marginBottom: "3rem" }}
         >
-          <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/home"
               className="text-gray-500 hover:no-underline hover:text-black"
+              style={{textDecoration:"none"}}
             >
               HOME
             </a>
           </div>
-          <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/stories"
               className="text-gray-500 hover:no-underline hover:text-black"
+              style={{textDecoration:"none"}}
             >
               STORIES
             </a>
           </div>
-          <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/presets"
               className="text-gray-500 hover:no-underline hover:text-black"
+              style={{textDecoration:"none"}}
             >
               PRESETS &amp; LUTS
             </a>
           </div>
-          <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/about"
               className="text-gray-500 hover:no-underline hover:text-black"
+              style={{textDecoration:"none"}}
             >
               ABOUT
             </a>
           </div>
-          <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/booknow"
               className="text-gray-500 hover:no-underline hover:text-black"
+              style={{textDecoration:"none"}}
             >
               BOOK NOW
             </a>
@@ -196,6 +203,7 @@ function Home() {
               <a
                 href="https://www.instagram.com/bhavikar.1001/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Bhavik Arora
               </a>

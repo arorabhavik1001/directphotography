@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
+import rLogo from "../images/rLogo.png"
 import { Form, Button } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { db } from "../firebase";
@@ -110,10 +111,10 @@ function Book() {
         onHide={() => setIsModalOpen(false)}
       />
       <img
-        src={logo}
+        src={rLogo}
         alt="logo"
         style={{
-          height: "7rem",
+          height: "6.3rem",
           marginLeft: "auto",
           marginRight: "auto",
           marginTop: "1.5rem",
@@ -124,28 +125,33 @@ function Book() {
         className="row"
         style={{ textAlign: "center", marginBottom: "2rem" }}
       >
-        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/home" className="text-gray-500 hover:no-underline">
+        <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+          <a href="/home" className="text-gray-500 hover:no-underline"
+          style={{textDecoration:"none"}}>
             HOME
           </a>
         </div>
-        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/stories" className="text-gray-500">
+        <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+          <a href="/stories" className="text-gray-500"
+          style={{textDecoration:"none"}}>
             STORIES
           </a>
         </div>
-        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/presets" className="text-gray-500">
+        <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+          <a href="/presets" className="text-gray-500"
+          style={{textDecoration:"none"}}>
             PRESETS &amp; LUTS
           </a>
         </div>
-        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/about" className="text-gray-500">
+        <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+          <a href="/about" className="text-gray-500"
+          style={{textDecoration:"none"}}>
             ABOUT
           </a>
         </div>
-        <div className="col-lg col-mg" style={{ paddingBottom: ".5rem" }}>
-          <a href="/booknow" className="text-gray-500">
+        <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+          <a href="/booknow" className="text-gray-500"
+          style={{textDecoration:"none"}}>
             BOOK NOW
           </a>
         </div>
@@ -159,7 +165,7 @@ function Book() {
             <Form.Label className="text-gray-500">Full Name</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter name"
+              // placeholder="Enter name"
               className="mb-4"
               name="name"
               required
@@ -174,7 +180,7 @@ function Book() {
             <Form.Label className="text-gray-500">Contact Number</Form.Label>
             <Form.Control
               type="number"
-              placeholder="Enter Mobile no."
+              // placeholder="Enter Mobile no."
               className="mb-4"
               name="number"
               required
@@ -189,7 +195,7 @@ function Book() {
             <Form.Label className="text-gray-500">Email</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter Email"
+              // placeholder="Enter Email"
               className="mb-4"
               name="email"
               required
@@ -207,7 +213,7 @@ function Book() {
             <Form.Label className="text-gray-500">Event Name</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter Event Name"
+              // placeholder="Enter Event Name"
               name="eventName"
               //   value={eventName}
               //   onChange={(e) => setEventName(e.target.value)}

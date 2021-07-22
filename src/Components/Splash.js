@@ -10,16 +10,29 @@ import s2 from "../images/splashScreen/s2.jpg";
 import s3 from "../images/splashScreen/s3.png";
 // import s4 from "../images/splashScreen/s4.jpg";
 import s4 from "../images/splashScreen/s4.png";
+import wlogo from "../images/wlogo.png"
 
 function Splash() {
   return (
     <div className="main">
+      
       <style>{"body {background-color:black}"}</style>
       <div
-        className="text-center centerr align-middle"
+        className="text-center centerrr align-middle"
         style={{ marginLeft: "auto", marginRight: "auto",  verticalAlign: "middle" }}
       >
-        <div className="row pb-10">
+        <img
+          src={wlogo}
+          alt="logo"
+          style={{
+            height: "8rem",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "1rem",
+          }}
+          className="m-20 mb-3 sm:mb-5"
+        />
+        <div className="row pb-3">
           <div className="col-lg-3 col-md-4 col-sm-6 hidden sm:inline-flex pl-0 pr-0">
             <img
               src={s3}
@@ -65,12 +78,13 @@ function Splash() {
             A chronology of a couple’s journey where they vow together to be
             One.
           </p>
-          <Link
-            to="/home"
-            className="btn bg-white  transition duration-150 transform hover:scale-110"
+          <a
+            href="/home"
+            
+            
           >
-            Enter
-          </Link>
+            <button className="btn buttonMero  transition duration-150 transform hover:scale-110">Enter</button>
+          </a>
         </div>
       </div>
     </div>
