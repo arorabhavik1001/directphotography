@@ -8,6 +8,8 @@ import emailjs from "emailjs-com";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import EventIcon from "@material-ui/icons/Event";
+import dotenv from 'dotenv';
+dotenv.config();
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -38,6 +40,7 @@ function MyVerticallyCenteredModal(props) {
 }
 
 function Book() {
+  console.log(process.env.REACT_APP_FIREBASE_API_KEY)
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [email, setMail] = useState("");

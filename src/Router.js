@@ -4,7 +4,6 @@ import Splash from './Components/Splash'
 import Book from './Components/Book'
 import ComingSoon from './Components/ComingSoon'
 import About from './Components/About'
-import Learn from './Components/Learn'
 const Router = () => {
     return (
         <BrowserRouter>
@@ -13,9 +12,7 @@ const Router = () => {
             <Route exact path="/booknow" component={Book} />
             <Route exact path="/stories" component={ComingSoon} />
             <Route exact path="/presets" component={ComingSoon} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/learn" component={Learn} />
-            
+            <Route exact path="/about" component={About} />            
         </BrowserRouter>
     )
 }
