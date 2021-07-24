@@ -45,3 +45,35 @@ body {
 .buttonMero {
   background-color: #FFFFFF;
 }
+
+@media (min-width: 990px) {
+  .showMe {
+      display: inline-flex;
+  }
+}
+@media (min-width: 570px) {
+  .showMEE {
+      display: inline-flex;
+  }
+  .hideMe {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  position: absolute;
+  right: 0;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-nav {
+      display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrap-nav {
+      display: none;
+  }
+}

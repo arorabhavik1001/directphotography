@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ReadMoreAndLess from "react-read-more-less";
 import logo from "../images/logo.png";
 import a1 from "../images/about/a1.JPG";
@@ -6,13 +6,93 @@ import ea1 from "../images/about/ea1.png";
 import vikase1 from "../images/about/vikase1.png";
 import beenae1 from "../images/about/beenae1.png";
 import anniee1 from "../images/about/anniee1.png";
-import rLogo from "../images/rLogo.png"
+import rLogo from "../images/rLogo.png";
 import a2 from "../images/about/a2.jpeg";
+import MenuIcon from "@material-ui/icons/Menu";
+import Modal from "react-bootstrap/Modal";
+import { Button } from "react-bootstrap";
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      backdrop="static"
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">Menu</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        {/* <h5>We have recieved your booking request.</h5>
+        <p>
+          We have also sent you a confirmation email. Our team would contact you
+          at the earliest to discuss further details.
+        </p> */}
+        <div className="row" style={{ textAlign: "center" }}>
+          <div className="col-sm-4 col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/home"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              HOME
+            </a>
+          </div>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/stories"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              STORIES
+            </a>
+          </div>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/presets"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              PRESETS
+            </a>
+          </div>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/about"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              ABOUT
+            </a>
+          </div>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/booknow"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              BOOK NOW
+            </a>
+          </div>
+        </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 function About() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <div className="container">
+        <div className="mobile-nav">
+          <MenuIcon onClick={() => setIsModalOpen(true)} />
+        </div>
         <img
           src={rLogo}
           alt="logo"
@@ -24,54 +104,46 @@ function About() {
           }}
           className="m-20 mb-4 sm:mb-5"
         />
+        <MyVerticallyCenteredModal
+          show={isModalOpen}
+          onHide={() => setIsModalOpen(false)}
+        />
         <div
-          className="row hidden"
+          className="row wrap-nav"
           style={{ textAlign: "center", marginBottom: "2rem" }}
         >
-          <div
-            className="col-lg col-md"
-            style={{ paddingBottom: ".5rem" }}
-          >
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/home"
               className="text-gray-500 no-underline hover:text-black"
-              style={{textDecoration:"none"}}
+              style={{ textDecoration: "none" }}
             >
               HOME
             </a>
           </div>
-          <div
-            className="col-lg col-md"
-            style={{ paddingBottom: ".5rem" }}
-          >
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/stories"
               className="text-gray-500 no-underline hover:text-black"
-              style={{textDecoration:"none"}}
+              style={{ textDecoration: "none" }}
             >
               STORIES
             </a>
           </div>
-          <div
-            className="col-lg col-md"
-            style={{ paddingBottom: ".5rem" }}
-          >
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/presets"
               className="text-gray-500 no-underline hover:text-black"
-              style={{textDecoration:"none"}}
+              style={{ textDecoration: "none" }}
             >
-              PRESETS &amp; LUTS
+              PRESETS
             </a>
           </div>
-          <div
-            className="col-lg col-md"
-            style={{ paddingBottom: ".5rem" }}
-          >
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/about"
               className="text-gray-500 no-underline hover:text-black"
-              style={{textDecoration:"none"}}
+              style={{ textDecoration: "none" }}
             >
               ABOUT
             </a>
@@ -80,7 +152,7 @@ function About() {
             <a
               href="/booknow"
               className="text-gray-500 :no-underline hover:text-black"
-              style={{textDecoration:"none"}}
+              style={{ textDecoration: "none" }}
             >
               BOOK NOW
             </a>
@@ -126,7 +198,7 @@ function About() {
                   }}
                 />
                 <h5>Navin</h5>
-                <p>Founder &amp; Videographer</p>
+                <p>Founder &amp; Cinematographer</p>
                 <ReadMoreAndLess
                   // ref={ReadMore}
                   className="read-more-content"
@@ -134,14 +206,14 @@ function About() {
                   readMoreText="Read more"
                   readLessText="Read less"
                 >
-                 Videography is just like a memory capturer of Happiness. Our
+                  Videography is just like a memory capturer of Happiness. Our
                   aim is to help everyone, all over India, capture their one of
                   the most important events in life, Wedding. We want to provide
                   high quality Videography at satisfactory prizes without
                   compromising the standard of service. Many videographers in
                   India, provide average quality services at high prices. But at
                   Direct Photography, we want to provide the best service at
-                  affordable charges. 
+                  affordable charges.
                 </ReadMoreAndLess>
               </div>
             </div>

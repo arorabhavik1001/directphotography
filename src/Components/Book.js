@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import logo from "../images/logo.png";
 import rLogo from "../images/rLogo.png"
 import { Form, Button } from "react-bootstrap";
-import Modal from "react-bootstrap/Modal";
 import { db } from "../firebase";
 import emailjs from "emailjs-com";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import EventIcon from "@material-ui/icons/Event";
 import dotenv from 'dotenv';
+import MenuIcon from "@material-ui/icons/Menu";
+import Modal from "react-bootstrap/Modal";
 dotenv.config();
 
 function MyVerticallyCenteredModal(props) {
@@ -39,6 +40,84 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
+function MenuModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      backdrop="static"
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Menu
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        {/* <h5>We have recieved your booking request.</h5>
+        <p>
+          We have also sent you a confirmation email. Our team would contact you
+          at the earliest to discuss further details.
+        </p> */}
+        <div
+          className="row"
+          style={{ textAlign: "center"}}
+        >
+          <div className="col-sm-4 col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/home"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              HOME
+            </a>
+          </div>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/stories"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              STORIES
+            </a>
+          </div>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/presets"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              PRESETS
+            </a>
+          </div>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/about"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              ABOUT
+            </a>
+          </div>
+          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
+            <a
+              href="/booknow"
+              className="text-gray-500 hover:no-underline hover:text-black"
+              style={{ textDecoration: "none" }}
+            >
+              BOOK NOW
+            </a>
+          </div>
+        </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 function Book() {
   console.log(process.env.REACT_APP_FIREBASE_API_KEY)
   const [name, setName] = useState("");
@@ -46,6 +125,7 @@ function Book() {
   const [email, setMail] = useState("");
   const [eventName, setEventName] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMenuModalOpen, setIsMenuModalOpen] = useState(false);
   //   const [eventDetails, setEventDetails] = useState("");
   const [startDate, setStartDate] = useState(new Date());
   var options = {
@@ -113,6 +193,13 @@ function Book() {
         show={isModalOpen}
         onHide={() => setIsModalOpen(false)}
       />
+      <MenuModal
+        show={isMenuModalOpen}
+        onHide={() => setIsMenuModalOpen(false)}
+      />
+      <div className="mobile-nav">
+          <MenuIcon onClick={() => setIsMenuModalOpen(true)} />
+        </div>
       <img
         src={rLogo}
         alt="logo"
@@ -125,7 +212,7 @@ function Book() {
         className="m-20 mb-4 sm:mb-5"
       />
       <div
-        className="row"
+        className="row wrap-nav"
         style={{ textAlign: "center", marginBottom: "2rem" }}
       >
         <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
@@ -143,7 +230,7 @@ function Book() {
         <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
           <a href="/presets" className="text-gray-500"
           style={{textDecoration:"none"}}>
-            PRESETS &amp; LUTS
+            PRESETS
           </a>
         </div>
         <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
