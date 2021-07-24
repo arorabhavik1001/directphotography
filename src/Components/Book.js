@@ -119,7 +119,6 @@ function MenuModal(props) {
 }
 
 function Book() {
-  console.log(process.env.REACT_APP_FIREBASE_API_KEY)
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [email, setMail] = useState("");

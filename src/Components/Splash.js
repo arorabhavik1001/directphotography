@@ -13,9 +13,9 @@ import Carousel from 'fade-carousel'
 
 function Splash() {
   const divStyle = {
-    height: "300px",
-    width: "100%",
-    backgroundColor: 'black'
+    width: "95px",
+    height: window.innerWidth >= 768 ? "35vw" : "55vw",
+    backgroundColor: "black",
   }
   const imageStyle = {
     height: '100%',

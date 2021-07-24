@@ -113,7 +113,7 @@ function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const divStyle = {
     width: "95%",
-    height: window.innerWidth >= 768 ? "35vw" : "55vw",
+    height: window.innerWidth >= 768 ? "45vw" : "55vw",
     backgroundColor: "white",
     marginLeft: "auto",
     marginRight: "auto",
