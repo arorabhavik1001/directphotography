@@ -13,7 +13,7 @@ import Carousel from 'fade-carousel'
 
 function Splash() {
   const divStyle = {
-    width: "95px",
+    width: window.innerWidth,
     height: window.innerWidth >= 768 ? "35vw" : "55vw",
     backgroundColor: "black",
   }

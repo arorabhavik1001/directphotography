@@ -33,28 +33,45 @@ import Carousel from "fade-carousel";
 import MenuIcon from "@material-ui/icons/Menu";
 import Modal from "react-bootstrap/Modal";
 import { Button } from "react-bootstrap";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+
 // import Carousel from "react-bootstrap/Carousel";
 
-function MyVerticallyCenteredModal(props) {
+function Home() {
+  window.onresize = function(event) {
+    document.location.reload(true)}
+  const [name, setName] = useState("");
+  const [isMModalOpen, setIsMModalOpen] = useState(false);
+  const divStyle = {
+    width: "95%",
+    height: window.innerWidth >= 768 ? "45vw" : "55vw",
+    backgroundColor: "white",
+    marginLeft: "auto",
+    marginRight: "auto",
+  };
+  const imageStyle = {
+    height: "100%",
+    width: "auto",
+    justifySelf: "center",
+  };
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-      backdrop="static"
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Menu</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        {/* <h5>We have recieved your booking request.</h5>
-        <p>
-          We have also sent you a confirmation email. Our team would contact you
-          at the earliest to discuss further details.
-        </p> */}
-        <div className="row" style={{ textAlign: "center" }}>
-          <div className="col-sm-4 col-md" style={{ paddingBottom: ".5rem" }}>
+    <>
+
+      <div className="App container">
+        {/* <style>{'body {background-color:#ececec}'}</style> */}
+        <div className="mobile-nav">
+          {/* <MenuIcon onClick={() => setIsModalOpen(true)} /> */}
+          {["top"].map((anchor) => (
+            <React.Fragment key={anchor}>
+              {/* <Button onClick={() => setIsMModalOpen(true)}>{anchor}</Button> */}
+              <MenuIcon onClick={() => setIsMModalOpen(true)} />
+              <SwipeableDrawer
+                anchor={anchor}
+                open={isMModalOpen}
+                onClose={() => setIsMModalOpen(false)}
+              >
+              <div className="row" style={{ textAlign: "center" }}>
+            <div className="col-lg col-md" style={{ paddingBottom: ".5rem", paddingTop: ".5rem" }}>
             <a
               href="/home"
               className="text-gray-500 hover:no-underline hover:text-black"
@@ -63,6 +80,7 @@ function MyVerticallyCenteredModal(props) {
               HOME
             </a>
           </div>
+          
           <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
               href="/stories"
@@ -99,36 +117,12 @@ function MyVerticallyCenteredModal(props) {
               BOOK NOW
             </a>
           </div>
+          <button style={{ width:"100%", backgroundColor:"gray", height:"2.5rem", fontSize:"1.2rem", color:"white" }}onClick={() => setIsMModalOpen(false)}>Close</button>
+          {/* <Button onClick={() => setIsMModalOpen(false)}>Close</Button> */}
         </div>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  );
-}
-
-function Home() {
-  const [name, setName] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const divStyle = {
-    width: "95%",
-    height: window.innerWidth >= 768 ? "45vw" : "55vw",
-    backgroundColor: "white",
-    marginLeft: "auto",
-    marginRight: "auto",
-  };
-  const imageStyle = {
-    height: "100%",
-    width: "auto",
-    justifySelf: "center",
-  };
-  return (
-    <>
-      <div className="App container">
-        {/* <style>{'body {background-color:#ececec}'}</style> */}
-        <div className="mobile-nav">
-          <MenuIcon onClick={() => setIsModalOpen(true)} />
+              </SwipeableDrawer>
+            </React.Fragment>
+          ))}
         </div>
         <img
           src={rLogo}
@@ -140,10 +134,6 @@ function Home() {
             marginTop: "1.5rem",
           }}
           className="m-20 mb-4 sm:mb-5"
-        />
-        <MyVerticallyCenteredModal
-          show={isModalOpen}
-          onHide={() => setIsModalOpen(false)}
         />
         <div
           className="row wrap-nav"
@@ -256,7 +246,7 @@ function Home() {
             walk down the memory lane, later in your life.
           </p>
           <p style={{ marginBottom: "3rem" }}>
-            Our preference is not the Money but your Satisfaction. 
+            Our preference is not the Money but your Satisfaction.
           </p>
           <h2 style={{ fontWeight: "300" }}>
             WE CREATE THE BEAUTIFUL WORLD OF MEMORIES.
