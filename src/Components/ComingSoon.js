@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import logo from "../images/logo.png";
-import bg from "../images/splashScreen/bg.png"
+import bg from "../images/home2/bg.jpg"
 import rLogo from "../images/rLogo.png"
 import MenuIcon from "@material-ui/icons/Menu";
 import Modal from "react-bootstrap/Modal";

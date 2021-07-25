@@ -9,19 +9,19 @@ import s3 from "../images/splashScreen/compressed/more/s3.jpg";
 import s4 from "../images/splashScreen/compressed/more/s4.jpg";
 import wlogo from "../images/wlogo.png";
 import Fadethrough from "react-fadethrough";
-import Carousel from 'fade-carousel'
+import Carousel from "fade-carousel";
 
 function Splash() {
   const divStyle = {
     width: window.innerWidth,
     height: window.innerWidth >= 768 ? "35vw" : "55vw",
     backgroundColor: "black",
-  }
+  };
   const imageStyle = {
-    height: '100%',
-    width: 'auto',
-    justifySelf: 'center'
-  }
+    height: "100%",
+    width: "auto",
+    justifySelf: "center",
+  };
   return (
     <div className="main">
       <style>{"body {background-color:black}"}</style>
@@ -75,37 +75,37 @@ function Splash() {
             {/* <div className="inline-flex hideMe"> */}
             {/* <div className="hidden hideMe"> */}
             <div className="inline-flex hideMe">
-            <Carousel divStyle={divStyle}  delay={4000}>
-          <div style={imageStyle}>
-            <img
-              src={s1}
-              style={{ width: "100%", height: "auto" }}
-              alt="asdada"
-            />
-          </div>
-          <div style={imageStyle}>
-            <img
-              src={s2}
-              style={{ width: "100%", height: "auto" }}
-              alt="asdada"
-            />
-          </div>
-          <div style={imageStyle}>
-            <img
-              src={s3}
-              style={{ width: "100%", height: "auto" }}
-              alt="asdada"
-            />
-          </div>
-          <div style={imageStyle}>
-            <img
-              src={s4}
-              style={{ width: "100%", height: "auto" }}
-              alt="asdada"
-            />
-          </div>
-      </Carousel>
-      </div>
+              <Carousel divStyle={divStyle} delay={4000}>
+                <div style={imageStyle}>
+                  <img
+                    src={s1}
+                    style={{ width: "100%", height: "auto" }}
+                    alt="asdada"
+                  />
+                </div>
+                <div style={imageStyle}>
+                  <img
+                    src={s2}
+                    style={{ width: "100%", height: "auto" }}
+                    alt="asdada"
+                  />
+                </div>
+                <div style={imageStyle}>
+                  <img
+                    src={s3}
+                    style={{ width: "100%", height: "auto" }}
+                    alt="asdada"
+                  />
+                </div>
+                <div style={imageStyle}>
+                  <img
+                    src={s4}
+                    style={{ width: "100%", height: "auto" }}
+                    alt="asdada"
+                  />
+                </div>
+              </Carousel>
+            </div>
           </div>
         </div>
         <div

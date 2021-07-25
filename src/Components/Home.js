@@ -38,13 +38,14 @@ import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 // import Carousel from "react-bootstrap/Carousel";
 
 function Home() {
-  window.onresize = function(event) {
-    document.location.reload(true)}
+  // window.onresize = function(event) {
+  //   // eslint-disable-next-line no-restricted-globals
+  //   location.reload()}
   const [name, setName] = useState("");
   const [isMModalOpen, setIsMModalOpen] = useState(false);
   const divStyle = {
     width: "95%",
-    height: window.innerWidth >= 768 ? "45vw" : "55vw",
+    height: window.innerWidth >= 768 ? "35vw" : "55vw",
     backgroundColor: "white",
     marginLeft: "auto",
     marginRight: "auto",
@@ -56,7 +57,6 @@ function Home() {
   };
   return (
     <>
-
       <div className="App container">
         {/* <style>{'body {background-color:#ececec}'}</style> */}
         <div className="mobile-nav">
@@ -70,56 +70,82 @@ function Home() {
                 open={isMModalOpen}
                 onClose={() => setIsMModalOpen(false)}
               >
-              <div className="row" style={{ textAlign: "center" }}>
-            <div className="col-lg col-md" style={{ paddingBottom: ".5rem", paddingTop: ".5rem" }}>
-            <a
-              href="/home"
-              className="text-gray-500 hover:no-underline hover:text-black"
-              style={{ textDecoration: "none" }}
-            >
-              HOME
-            </a>
-          </div>
-          
-          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
-            <a
-              href="/stories"
-              className="text-gray-500 hover:no-underline hover:text-black"
-              style={{ textDecoration: "none" }}
-            >
-              STORIES
-            </a>
-          </div>
-          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
-            <a
-              href="/presets"
-              className="text-gray-500 hover:no-underline hover:text-black"
-              style={{ textDecoration: "none" }}
-            >
-              PRESETS
-            </a>
-          </div>
-          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
-            <a
-              href="/about"
-              className="text-gray-500 hover:no-underline hover:text-black"
-              style={{ textDecoration: "none" }}
-            >
-              ABOUT
-            </a>
-          </div>
-          <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
-            <a
-              href="/booknow"
-              className="text-gray-500 hover:no-underline hover:text-black"
-              style={{ textDecoration: "none" }}
-            >
-              BOOK NOW
-            </a>
-          </div>
-          <button style={{ width:"100%", backgroundColor:"gray", height:"2.5rem", fontSize:"1.2rem", color:"white" }}onClick={() => setIsMModalOpen(false)}>Close</button>
-          {/* <Button onClick={() => setIsMModalOpen(false)}>Close</Button> */}
-        </div>
+                <div className="row" style={{ textAlign: "center" }}>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem", paddingTop: ".5rem" }}
+                  >
+                    <a
+                      href="/home"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none" }}
+                    >
+                      HOME
+                    </a>
+                  </div>
+
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/stories"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none" }}
+                    >
+                      STORIES
+                    </a>
+                  </div>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/presets"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none" }}
+                    >
+                      PRESETS
+                    </a>
+                  </div>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/about"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none" }}
+                    >
+                      ABOUT
+                    </a>
+                  </div>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/booknow"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none" }}
+                    >
+                      BOOK NOW
+                    </a>
+                  </div>
+                  <button
+                    style={{
+                      width: "100%",
+                      backgroundColor: "gray",
+                      height: "2.5rem",
+                      fontSize: "1.2rem",
+                      color: "white",
+                    }}
+                    onClick={() => setIsMModalOpen(false)}
+                  >
+                    Close
+                  </button>
+                  {/* <Button onClick={() => setIsMModalOpen(false)}>Close</Button> */}
+                </div>
               </SwipeableDrawer>
             </React.Fragment>
           ))}
@@ -204,37 +230,38 @@ function Home() {
           <img className="d-block w-100" src={s4} alt="Third slide" />
         </Carousel.Item>
       </Carousel> */}
-
-        <Carousel divStyle={divStyle} delay={4000}>
-          <div style={imageStyle}>
-            <img
-              src={s1}
-              style={{ width: "100%", height: "auto" }}
-              alt="image 1"
-            />
-          </div>
-          <div style={imageStyle}>
-            <img
-              src={s2}
-              style={{ width: "100%", height: "auto" }}
-              alt="image 2"
-            />
-          </div>
-          <div style={imageStyle}>
-            <img
-              src={s3}
-              style={{ width: "100%", height: "auto" }}
-              alt="image 3"
-            />
-          </div>
-          <div style={imageStyle}>
-            <img
-              src={s4}
-              style={{ width: "100%", height: "auto" }}
-              alt="image 4"
-            />
-          </div>
-        </Carousel>
+        {/* <div className="inline-flex hideMe"> */}
+          <Carousel divStyle={divStyle} delay={4000}>
+            <div style={imageStyle}>
+              <img
+                src={s1}
+                style={{ width: "100%", height: "auto" }}
+                alt="image 1"
+              />
+            </div>
+            <div style={imageStyle}>
+              <img
+                src={s2}
+                style={{ width: "100%", height: "auto" }}
+                alt="image 2"
+              />
+            </div>
+            <div style={imageStyle}>
+              <img
+                src={s3}
+                style={{ width: "100%", height: "auto" }}
+                alt="image 3"
+              />
+            </div>
+            <div style={imageStyle}>
+              <img
+                src={s4}
+                style={{ width: "100%", height: "auto" }}
+                alt="image 4"
+              />
+            </div>
+          </Carousel>
+        {/* </div> */}
 
         <div className="text-center text-gray-500">
           <h2 style={{ marginTop: "2.5rem", marginBottom: "2rem" }}>
