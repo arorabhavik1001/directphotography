@@ -180,6 +180,7 @@ function Book() {
             </React.Fragment>
           ))}
         </div>
+      <a href="/home">
       <img
         src={rLogo}
         alt="logo"
@@ -191,6 +192,7 @@ function Book() {
         }}
         className="m-20 mb-4 sm:mb-5"
       />
+      </a>
       <div
         className="row wrap-nav"
         style={{ textAlign: "center", marginBottom: "2rem" }}
@@ -268,7 +270,7 @@ function Book() {
               // placeholder="Enter Email"
               className="mb-4"
               name="email"
-              required
+              // required
               //   value={email}
               //   onChange={(e) => setNumber(e.target.value)}
             />

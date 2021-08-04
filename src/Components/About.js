@@ -2,10 +2,13 @@ import React, {useState} from "react";
 import ReadMoreAndLess from "react-read-more-less";
 import logo from "../images/logo.png";
 import a1 from "../images/about/a1.JPG";
+import n2 from "../images/about/n2.png";
 import ea1 from "../images/about/ea1.png";
 import vikase1 from "../images/about/vikase1.png";
 import beenae1 from "../images/about/beenae1.png";
 import anniee1 from "../images/about/anniee1.png";
+import hitesh from "../images/about/hitesh.jpg";
+import ankit from "../images/about/ankit.jpg";
 import rLogo from "../images/rLogo.png";
 import a2 from "../images/about/a2.jpeg";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -83,6 +86,7 @@ function About() {
             </React.Fragment>
           ))}
         </div>
+        <a href="/home">
         <img
           src={rLogo}
           alt="logo"
@@ -94,6 +98,7 @@ function About() {
           }}
           className="m-20 mb-4 sm:mb-5"
         />
+        </a>
         <div
           className="row wrap-nav"
           style={{ textAlign: "center", marginBottom: "2rem" }}
@@ -160,7 +165,7 @@ function About() {
             style={{ marginBottom: "2rem", fontSize: "1.2rem" }}
             className="text-justify"
           >
-            Welcome to Direct Photography. It is a joint venture by Vimal Sharma
+            Welcome to Direct Photography. It is a joint venture by Naveen Pal
             and Vimal Sharma. Our aim is to provide a better and next level
             photography service to everyone's one in a lifetime event,
             "Wedding". At "Direct Photography", we want to eradicate the
@@ -175,7 +180,7 @@ function About() {
             <div className="col-lg-5 col-sm-12 col-md-5 profile my-3 mx-3">
               <div className="p-3">
                 <img
-                  src={ea1}
+                  src={n2}
                   className="transition duration-150 transform hover:scale-110 pb-3 "
                   style={{
                     width: "50%",
@@ -183,7 +188,7 @@ function About() {
                     marginRight: "auto",
                   }}
                 />
-                <h5>Navin</h5>
+                <h5>Naveen</h5>
                 <p>Founder &amp; Cinematographer</p>
                 <ReadMoreAndLess
                   // ref={ReadMore}
@@ -277,7 +282,7 @@ function About() {
                   }}
                 />
                 <h5>Beena Nankani</h5>
-                <p>Photographer</p>
+                <p>Candid Photographer</p>
                 <ReadMoreAndLess
                   // ref={ReadMore}
                   className="read-more-content"
@@ -307,6 +312,70 @@ function About() {
                 />
                 <h5>Annie Nathan</h5>
                 <p>Candid Photographer</p>
+                {/* <ReadMoreAndLess
+                  // ref={ReadMore}
+                  className="read-more-content"
+                  charLimit={80}
+                  readMoreText="Read more"
+                  readLessText="Read less"
+                >
+                  Videography is just like a memory capturer of Happiness. Our
+                  aim is to help everyone, all over India, capture their one of
+                  the most important events in life, Wedding. We want to provide
+                  high quality Videography at satisfactory prizes without
+                  compromising the standard of service. Many videographers in
+                  India, provide average quality services at high prices. But at
+                  Direct Photography, we want to provide the best service at
+                  affordable charges.
+                </ReadMoreAndLess> */}
+              </div>
+            </div>
+          </div>
+          <div className="row g-2 g-lg-3 justify-content-center mb-5">
+            <div className="col-lg-3 col-sm-12 col-md-3 profile my-3 mx-3">
+              <div className="p-3">
+                <img
+                  src={hitesh}
+                  className="transition duration-150 transform hover:scale-110 pb-3"
+                  style={{
+                    width: "70%",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                />
+                <h5>Hitesh Arora</h5>
+                <p>Photographer</p>
+                {/* <ReadMoreAndLess
+                  // ref={ReadMore}
+                  className="read-more-content"
+                  charLimit={80}
+                  readMoreText="Read more"
+                  readLessText="Read less"
+                >
+                  Videography is just like a memory capturer of Happiness. Our
+                  aim is to help everyone, all over India, capture their one of
+                  the most important events in life, Wedding. We want to provide
+                  high quality Videography at satisfactory prizes without
+                  compromising the standard of service. Many videographers in
+                  India, provide average quality services at high prices. But at
+                  Direct Photography, we want to provide the best service at
+                  affordable charges.
+                </ReadMoreAndLess> */}
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-12 col-md-3 profile my-3 mx-3">
+              <div className="p-3">
+                <img
+                  src={ankit}
+                  className="transition duration-150 transform hover:scale-110 pb-3"
+                  style={{
+                    width: "70%",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                />
+                <h5>Ankit Tejaniya</h5>
+                <p>Photographer</p>
                 {/* <ReadMoreAndLess
                   // ref={ReadMore}
                   className="read-more-content"

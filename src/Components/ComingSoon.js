@@ -80,6 +80,7 @@ function ComingSoon() {
             </React.Fragment>
           ))}
         </div>
+        <a href="/home">
       <img
         src={rLogo}
         alt="logo"
@@ -91,6 +92,7 @@ function ComingSoon() {
         }}
         className="m-20 mb-4 sm:mb-5"
       />
+      </a>
       <div
         className="row wrap-nav"
         style={{ textAlign: "center", marginBottom: "2rem" }}

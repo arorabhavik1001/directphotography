@@ -22,9 +22,14 @@ body {
   vertical-align: middle
 }
 
-.footer {
+.footer1 {
   --tw-text-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-text-opacity));
+  /* background-color: rgb(59, 59, 59); */
+}
+.footer {
+  --tw-text-opacity: 1;
+  background-color: rgba(210, 215, 219, var(--tw-text-opacity));
   /* background-color: rgb(59, 59, 59); */
 }
 
