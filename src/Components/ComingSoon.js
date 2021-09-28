@@ -29,7 +29,7 @@ function ComingSoon() {
               <div className="row" style={{ textAlign: "center" }}>
             <div className="col-lg col-md" style={{ paddingBottom: ".5rem", paddingTop: ".5rem" }}>
             <a
-              href="/home"
+              href="/"
               className="text-gray-500 hover:no-underline hover:text-black"
               style={{ textDecoration: "none" }}
             >
@@ -80,7 +80,7 @@ function ComingSoon() {
             </React.Fragment>
           ))}
         </div>
-        <a href="/home">
+        <a href="/">
       <img
         src={rLogo}
         alt="logo"
@@ -98,7 +98,7 @@ function ComingSoon() {
         style={{ textAlign: "center", marginBottom: "2rem" }}
       >
         <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
-          <a href="/home" className="text-gray-500 hover:no-underline"
+          <a href="/" className="text-gray-500 hover:no-underline"
           style={{textDecoration:"none"}}>
             HOME
           </a>
@@ -130,6 +130,7 @@ function ComingSoon() {
       </div>
       <div className="text-center text-gray-500">
         <h2 style={{ marginTop: "2.5rem", marginBottom: "2rem", fontSize:"4rem",  }}>"COMING SOON”</h2>
+        <h3 style={{ marginTop: "2.5rem", marginBottom: "2rem",   }}>Website under construction. This feature would be available soon.</h3>
       </div>
     </div>
   );

@@ -114,15 +114,12 @@ function Splash() {
         >
           <p
             style={{ fontSize: "1.2rem" }}
-            className="text-gray-500 text-justify"
+            className="text-gray-500 text-center"
           >
-            A wedding is a validation coupled with the showcase of Love
-            inclusive of various events with exotic venues, food, guests,
-            dresses, jewellery and so on- What if it could never be recorded?
+            "It doesn't matter if the boy is perfect or the girl is perfect, as long as they are perfect for each other."
           </p>
           <p className="text-white pb-2">
-            A chronology of a couple’s journey where they vow together to be
-            One.
+            True Love never Ends...
           </p>
           <a href="/home">
             <button className="btn buttonMero transition duration-150 transform hover:scale-110">

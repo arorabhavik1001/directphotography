@@ -79,7 +79,7 @@ function Home() {
                     style={{ paddingBottom: ".5rem", paddingTop: ".5rem" }}
                   >
                     <a
-                      href="/home"
+                      href="/"
                       className="text-gray-500 hover:no-underline hover:text-black"
                       style={{ textDecoration: "none" }}
                     >
@@ -153,7 +153,7 @@ function Home() {
             </React.Fragment>
           ))}
         </div>
-        <a href="/home">
+        <a href="/">
           <img
             src={rLogo}
             alt="logo"
@@ -172,7 +172,7 @@ function Home() {
         >
           <div className="col-lg col-md" style={{ paddingBottom: ".5rem" }}>
             <a
-              href="/home"
+              href="/"
               className="text-gray-500 hover:no-underline hover:text-black"
               style={{ textDecoration: "none" }}
             >
