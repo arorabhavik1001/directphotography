@@ -313,70 +313,70 @@ function Home() {
         </div>
       </div>
       <footer>
-        <div class="footer1" style={{width:"100%", paddingTop:"2rem"}}>
-        <div class="container ">
-        <div className="row" style={{marginLeft:"auto", marginRight: "auto"}}>
-          <div
-            className="col-lg-6 col-md-6 col-sm-12 items-center"
-            style={{ alignItems: "center" }}
-          >
-            <h2 className="text-gray-500">Our Services</h2>
-            <p style={{ fontSize: "1.2rem" }} className="text-gray-500">
-              <DoubleArrowIcon />
-              Pre Wedding Photography
-            </p>
-            <p style={{ fontSize: "1.2rem" }} className="text-gray-500">
-              <DoubleArrowIcon />
-              Luxury Wedding Photography
-            </p>
-            <p style={{ fontSize: "1.2rem" }} className="text-gray-500">
-              <DoubleArrowIcon />
-              Destination Wedding Photography
-            </p>
-            <p style={{ fontSize: "1.2rem" }} className="text-gray-500">
-              <DoubleArrowIcon />
-              Model Portfolio
-            </p>
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 mt-2">
-            <h2 className="text-gray-500">Contact Us</h2>
-            <p style={{ fontSize: "1rem" }} className="text-gray-500">
-                <PhoneIcon style={{ marginRight: "5px" }} />
-              <a href="tel:+919643926949">
-                +91-9643926949
-              </a>,&nbsp;
-              <a href="tel:+919315404993">
-                9315404993
-              </a>
-            </p>
-            <p style={{ fontSize: "1rem" }} className="text-gray-500">
-                <EmailIcon style={{ marginRight: "5px" }} />
-              <a href="mailto:info.directphotography@gmail.com">
-                info.directphotography@gmail.com
-              </a>
-            </p>
+        <div class="footer1" style={{ width: "100%", paddingTop: "2rem" }}>
+          <div class="container ">
+            <div className="row" style={{ marginLeft: "auto", marginRight: "auto" }}>
+              <div
+                className="col-lg-6 col-md-6 col-sm-12 items-center"
+                style={{ alignItems: "center" }}
+              >
+                <h2 className="text-gray-500">Our Services</h2>
+                <p style={{ fontSize: "1.2rem" }} className="text-gray-500">
+                  <DoubleArrowIcon />
+                  Pre Wedding Photography
+                </p>
+                <p style={{ fontSize: "1.2rem" }} className="text-gray-500">
+                  <DoubleArrowIcon />
+                  Luxury Wedding Photography
+                </p>
+                <p style={{ fontSize: "1.2rem" }} className="text-gray-500">
+                  <DoubleArrowIcon />
+                  Destination Wedding Photography
+                </p>
+                <p style={{ fontSize: "1.2rem" }} className="text-gray-500">
+                  <DoubleArrowIcon />
+                  Model Portfolio
+                </p>
+              </div>
+              <div className="col-lg-6 col-md-6 col-sm-12 mt-2">
+                <h2 className="text-gray-500">Contact Us</h2>
+                <p style={{ fontSize: "1rem" }} className="text-gray-500">
+                  <PhoneIcon style={{ marginRight: "5px" }} />
+                  <a href="tel:+919643926949">
+                    +91-9643926949
+                  </a>,&nbsp;
+                  <a href="tel:+919315404993">
+                    9315404993
+                  </a>
+                </p>
+                <p style={{ fontSize: "1rem" }} className="text-gray-500">
+                  <EmailIcon style={{ marginRight: "5px" }} />
+                  <a href="mailto:info.directphotography@gmail.com">
+                    info.directphotography@gmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
 
-      <div class="footer">
-        <div class="container" style={{ textAlign: "center" }}>
-          <p
-            style={{ margin: "0px", padding: "10px", fontSize: ".9rem" }}
-            className="text-gray-500"
-          >
-            Copyright Ⓒ 2021 Direct Photography. All Rights Reserved. Created by{" "}
-            <a
-              href="https://www.instagram.com/bhavikar.1001/"
-              target="_blank"
-              rel="noreferrer"
+        <div class="footer">
+          <div class="container" style={{ textAlign: "center" }}>
+            <p
+              style={{ margin: "0px", padding: "10px", fontSize: ".9rem" }}
+              className="text-gray-500"
             >
-              Bhavik Arora
-            </a>
-          </p>
+              Copyright Ⓒ 2021 Direct Photography. All Rights Reserved. Created by{" "}
+              <a
+                href="https://www.instagram.com/bhavikar.1001/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Bhavik Arora
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
       </footer>
     </>
   );
